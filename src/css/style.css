@@ -156,81 +156,96 @@ code {
   height: 100%;
 }
 
-.header {
+.box {
+  width: 100%;
+  height: 0.4rem;
+  background: #f0efed;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.piclist {
+  width: 100%;
+  padding-left: 0.4rem;
+}
+
+.piclist h1 {
   width: 100%;
   height: 1.33333rem;
+  line-height: 1.33333rem;
+  font-size: 0.53333rem;
+  font-weight: 400;
+}
+
+.piclist .picolist {
+  width: 100%;
+  padding: 0.4rem 0.4rem 0.4rem 0;
+  border-top: 1px solid #ccc;
+}
+
+.piclist .picolist dl {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
-  color: #fff;
+  align-items: flex-start;
 }
 
-.header a {
-  color: #fff;
+.piclist .picolist dl dt {
+  width: 2.93333rem;
+  height: 2.50667rem;
 }
 
-.header .hleft {
-  width: 1.81333rem;
-  height: 1.33333rem;
-  flex-shrink: 0;
-  text-align: center;
-  line-height: 1.33333rem;
-  background: #05ad9c;
+.piclist .picolist dl dt img {
+  width: 100%;
+  height: 100%;
 }
 
-.header .hright {
-  padding: 0 0 0 0.4rem;
+.piclist .picolist dl dd {
   flex: 1;
+  padding-left: 0.4rem;
+}
+
+.piclist .picolist dl dd h2 {
+  font-size: 0.48rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.piclist .picolist dl dd h3 {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.37333rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.piclist .picolist dl dd h4 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #06c1ae;
 }
 
-.header .hright .form {
-  flex: 1;
-  height: 0.85333rem;
-  position: relative;
+.piclist .picolist dl dd h4 p:nth-child(2) {
+  color: #666;
 }
 
-.header .hright .form input {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.13333rem;
-  border: 0;
-  outline: 0;
-  padding-left: 0.66667rem;
-  background: #05ad9c;
+.piclist .picolist dl dd h4 span:nth-child(1) {
+  color: #00c3ad;
+  font-size: 0.42667rem;
 }
 
-.header .hright .form .icon {
-  position: absolute;
-  left: 0.21333rem;
-  top: 0.13333rem;
+.piclist .picolist dl dd h4 span:nth-child(1) b {
+  color: #00c3ad;
+  font-size: 0.53333rem;
 }
 
-.header .hright .wode {
-  width: 1.33333rem;
-  height: 1.33333rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  width: 100%;
-  height: auto;
-}
-
-.pic {
-  width: 100%;
-}
-
-.pic img {
-  width: 100%;
-  height: 100%;
+.piclist .picolist dl dd h4 span:nth-child(2) {
+  color: #666;
+  font-size: 0.37333rem;
 }
