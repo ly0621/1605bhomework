@@ -66,3 +66,85 @@
         height: 100%;
     }
 }
+.footer {
+    width: 100%;
+    background: #f0efed;
+    padding: 0 px2rem(15px);
+    >p {
+        height: px2rem(50px);
+        line-height: px2rem(50px);
+        color: #00c3ad;
+    }
+    .nav {
+        width: 100%;
+        height: px2rem(50px);
+        @include display(flex, row, space-between);
+        a {
+            width: 20%;
+            text-align: center;
+            //height: px2rem(50px);
+            border: 1px solid #00c3ad;
+            border-radius: px2rem(5px);
+            padding: px2rem(5px) 0;
+            color: #00c3ad;
+            &:nth-child(3) {
+                text-align: right;
+                border: 0;
+                color: #000;
+            }
+        }
+    }
+    .wode {
+        width: 100%;
+        height: px2rem(80px);
+        @include display(flex, row, space-around, center);
+        a {
+            color: #00c3ad;
+            //padding-right: px2rem(20px);
+            &:after {
+                content: "|";
+                color: #000;
+                padding: 0 px2rem(15px);
+            }
+        }
+        b {
+            color: #00c3ad;
+        }
+    }
+    .find {
+        width: 100%;
+        @include display(flex, row, flex-start, flex-start);
+        p {
+            flex-shrink: 0;
+        }
+        ul {
+            width: 100%;
+            @include display(flex, row, space-between, center);
+            li {
+                width: 33%;
+                text-align: center;
+                color: #00c3ad;
+            }
+        }
+    }
+    .aa {
+        width: 100%;
+        @include display(flex, row, center);
+        a {
+            color: #00c3ad;
+            margin: 0 px2rem(10px);
+        }
+    }
+    h6 {
+        color: #00c3ad;
+        text-align: center;
+    }
+    .add {
+        width: 100%;
+        height: px2rem(60px);
+        @include display(flex, row, space-between, center);
+        p {
+            color: #666;
+        }
+    }
+}
