@@ -5,6 +5,7 @@
     //overflow: hidden;
 }
 
+<<<<<<< HEAD
 
 .footer {
     width: 100%;
@@ -256,5 +257,81 @@
             //     }
             // }
         }
+=======
+.box {
+    width: 100%;
+    height: px2rem(15px);
+    background: #f0efed;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.piclist {
+    width: 100%;
+    padding-left: px2rem(15px);
+    h1 {
+        width: 100%;
+        height: px2rem(50px);
+        line-height: px2rem(50px);
+        font-size: px2rem(20px);
+        font-weight: 400;
+    }
+    .picolist {
+        width: 100%;
+        padding: px2rem(15px) px2rem(15px) px2rem(15px) 0;
+        border-top: 1px solid #ccc;
+        dl {
+            width: 100%;
+            @include display(flex, row, flex-start, flex-start);
+            dt {
+                width: px2rem(110px);
+                height: px2rem(94px);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            dd {
+                flex: 1;
+                padding-left: px2rem(15px);
+                h2 {
+                    font-size: px2rem(18px);
+                    font-weight: 400;
+                    color: #333;
+                }
+                h3 {
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    font-size: px2rem(14px);
+                    font-weight: 400;
+                    color: #333;
+                    margin-bottom: px2rem(15px);
+                }
+                h4 {
+                    @include display(flex, row, space-between);
+                    p {
+                        &:nth-child(2) {
+                            color: #666;
+                        }
+                    }
+                    span:nth-child(1) {
+                        color: #00c3ad;
+                        font-size: px2rem(16px);
+                        b {
+                            color: #00c3ad;
+                            font-size: px2rem(20px);
+                        }
+                    }
+                    span:nth-child(2) {
+                        color: #666;
+                        font-size: px2rem(14px);
+                    }
+                }
+            }
+        }
+>>>>>>> 4me
     }
 }
